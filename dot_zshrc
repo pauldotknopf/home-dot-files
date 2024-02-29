@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+if [ -e $HOME/.zshrc.local ]; then
+  . $HOME/.zshrc.local
+fi
+
+alias kubectl="minikube kubectl --"
+
+ZSH_THEME="spaceship"
+source $HOME/.oh-my-zsh/oh-my-zsh.sh
